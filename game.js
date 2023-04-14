@@ -16,7 +16,11 @@ fetch('data.json')
 		let currentCharIndex = 0;
 
 		// Affichage du premier caractère et des choix de pinyin
-		displayCharData(data[currentCharIndex]);
+		let pinyinChoices = [data[currentCharIndex.pinyin]];
+		pinyinChoices.push(data[[Math.floor(Math.random()*data.length)].pinyin]);
+		pinyinChoices.push(data[[Math.floor(Math.random()*data.length)].pinyin]);
+		pinyinChoices.push(data[[Math.floor(Math.random()*data.length)].pinyin]);
+		displayCharData(data[currentCharIndex],pinyinChoices);
 
 		// Ajout d'un gestionnaire d'événement sur chaque bouton de choix de pinyin
 		choicesEls.forEach(choiceEl => {
@@ -41,16 +45,19 @@ fetch('data.json')
 		});
 
 		// Fonction pour afficher les données d'un caractère chinois
-		function displayCharData(charData) {
+		function displayCharData(charData, pinyinchoices) {
 			console.log(charData);
-			charEl.innerText = charData.character;
+			charEl.innerText = charData.chinese_character;
 			//toneEl.innerText = charData.tone;
 			//lessonEl.innerText = charData.lesson;
-			const pinyinArray = charData.pinyin.split(' ');
-			shuffle(pinyinArray);
+			//const pinyinArray = charData.pinyin.split(' ');
+			//shuffle(pinyinArray);
 			// Affichage des choix de pinyin dans les boutons
 			choicesEls.forEach((choiceEl, i) => {
-				choiceEl.innerText = pinyinArray[i];
+				let rdmIndex = Math.floor(Math.random()*pinyinchoices.length);
+
+				choiceEl.innerText = pinyinchoices[rdmIndex];
+				pinyinchoices.splice(rdmIndex,1);
 			});
 		}
 
