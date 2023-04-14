@@ -1,7 +1,7 @@
 // Récupération des éléments HTML
 const charEl = document.getElementById('character-container');
-const toneEl = document.getElementById('tone');
-const lessonEl = document.getElementById('lesson');
+//const toneEl = document.getElementById('tone');
+//const lessonEl = document.getElementById('lesson');
 const choicesEls = document.querySelectorAll('.choice');
 
 // Chargement des données du fichier JSON
@@ -42,8 +42,8 @@ fetch('data.json?' + new Date().getTime())
 		// Fonction pour afficher les données d'un caractère chinois
 		function displayCharData(charData) {
 			charEl.innerText = charData.character;
-			toneEl.innerText = charData.tone;
-			lessonEl.innerText = charData.lesson;
+			//toneEl.innerText = charData.tone;
+			//lessonEl.innerText = charData.lesson;
 			shuffle(charData.pinyin_choices);
 			// Affichage des choix de pinyin dans les boutons
 			choicesEls.forEach((choiceEl, i) => {
