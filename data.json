@@ -1,17 +1,103 @@
-{"chinese_character": "\u4e00", "pinyin": "Y\u012b", "translation": "Un", "tone": "1", "lesson": "a"}
-{"chinese_character": "\u4e8c", "pinyin": "\u00c8r", "translation": "Deux", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u4e09", "pinyin": "S\u0101n", "translation": "Trois", "tone": "1", "lesson": "a"}
-{"chinese_character": "\u516d", "pinyin": "Li\u00f9", "translation": "Six", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u516b", "pinyin": "B\u0101", "translation": "Huit", "tone": "1", "lesson": "a"}
-{"chinese_character": "\u5341", "pinyin": "Sh\u00ed", "translation": "Dix", "tone": "2", "lesson": "a"}
-{"chinese_character": "\u5de5", "pinyin": "G\u014dng", "translation": "Travail / Artisan, ouvrier", "tone": "1", "lesson": "a"}
-{"chinese_character": "\u738b", "pinyin": "W\u00e1ng", "translation": "Roi", "tone": "2", "lesson": "a"}
-{"chinese_character": "\u4e0a", "pinyin": "Sh\u00e0ng", "translation": "Au-dessus, sur / Monter", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u4e0b", "pinyin": "Xi\u00e0", "translation": "En-dessous, sous / descendre", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u4eba", "pinyin": "R\u00e9n", "translation": "Homme", "tone": "2", "lesson": "a"}
-{"chinese_character": "\u4e2a", "pinyin": "G\u00e8", "translation": "[Classif.]", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u6728", "pinyin": "M\u00f9", "translation": "Bois", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u4e0d", "pinyin": "B\u00f9", "translation": "Ne pas \u00eatre / Ne ... pas / Non", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u5927", "pinyin": "D\u00e0", "translation": "Grand", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u592a", "pinyin": "T\u00e0i", "translation": "Trop", "tone": "4", "lesson": "a"}
-{"chinese_character": "\u5929", "pinyin": "Ti\u0101n", "translation": "Ciel / Jour", "tone": "1", "lesson": "a"}
+[{
+	"chinese_character": "\u4e00",
+	"pinyin": "Y\u012b",
+	"translation": "Un",
+	"tone": "1",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4e8c",
+	"pinyin": "\u00c8r",
+	"translation": "Deux",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4e09",
+	"pinyin": "S\u0101n",
+	"translation": "Trois",
+	"tone": "1",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u516d",
+	"pinyin": "Li\u00f9",
+	"translation": "Six",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u516b",
+	"pinyin": "B\u0101",
+	"translation": "Huit",
+	"tone": "1",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u5341",
+	"pinyin": "Sh\u00ed",
+	"translation": "Dix",
+	"tone": "2",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u5de5",
+	"pinyin": "G\u014dng",
+	"translation": "Travail / Artisan, ouvrier",
+	"tone": "1",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u738b",
+	"pinyin": "W\u00e1ng",
+	"translation": "Roi",
+	"tone": "2",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4e0a",
+	"pinyin": "Sh\u00e0ng",
+	"translation": "Au-dessus, sur / Monter",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4e0b",
+	"pinyin": "Xi\u00e0",
+	"translation": "En-dessous, sous / descendre",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4eba",
+	"pinyin": "R\u00e9n",
+	"translation": "Homme",
+	"tone": "2",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4e2a",
+	"pinyin": "G\u00e8",
+	"translation": "[Classif.]",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u6728",
+	"pinyin": "M\u00f9",
+	"translation": "Bois",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u4e0d",
+	"pinyin": "B\u00f9",
+	"translation": "Ne pas \u00eatre / Ne ... pas / Non",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u5927",
+	"pinyin": "D\u00e0",
+	"translation": "Grand",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u592a",
+	"pinyin": "T\u00e0i",
+	"translation": "Trop",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u5929",
+	"pinyin": "Ti\u0101n",
+	"translation": "Ciel / Jour",
+	"tone": "1",
+	"lesson": "a"
+}]
