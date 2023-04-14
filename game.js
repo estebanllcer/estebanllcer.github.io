@@ -42,6 +42,7 @@ fetch('data.json')
 
 		// Fonction pour afficher les données d'un caractère chinois
 		function displayCharData(charData) {
+			console.log(charData);
 			charEl.innerText = charData.character;
 			//toneEl.innerText = charData.tone;
 			//lessonEl.innerText = charData.lesson;
