@@ -48,7 +48,7 @@ fetch('data.json')
 					pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
 					console.log(pinyinChoices);
 					pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
-					displayCharData(data[currentCharIndex]);
+					displayCharData(data[currentCharIndex],pinyinChoices);
 				} else {
 					alert('Vous avez terminé!');
 				}
