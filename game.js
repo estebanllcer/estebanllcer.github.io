@@ -5,7 +5,7 @@ const lessonEl = document.getElementById('lesson');
 const choicesEls = document.querySelectorAll('.choice');
 
 // Chargement des données du fichier JSON
-fetch('data.json')
+fetch('data.json?' + new Date().getTime())
 	.then(response => response.json())
 	.then(data => {
 		// Mélange des données
