@@ -1,11 +1,5 @@
-// Récupération des éléments HTML
-const charEl = document.getElementById('character-container');
-//const toneEl = document.getElementById('tone');
-//const lessonEl = document.getElementById('lesson');
-const choicesEls = document.querySelectorAll('.choice');
-
 // Chargement des données du fichier JSON
-fetch('data.json?' + new Date().getTime())
+fetch('data.json')
 	.then(response => response.json())
 	.then(data => {
 		// Mélange des données
@@ -44,10 +38,11 @@ fetch('data.json?' + new Date().getTime())
 			charEl.innerText = charData.character;
 			//toneEl.innerText = charData.tone;
 			//lessonEl.innerText = charData.lesson;
-			shuffle(charData.pinyin_choices);
+			const pinyinArray = charData.pinyin.split(' ');
+			shuffle(pinyinArray);
 			// Affichage des choix de pinyin dans les boutons
 			choicesEls.forEach((choiceEl, i) => {
-				choiceEl.innerText = charData.pinyin_choices[i];
+				choiceEl.innerText = pinyinArray[i];
 			});
 		}
 
