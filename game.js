@@ -1,5 +1,5 @@
 // Récupération des éléments HTML
-const charEl = document.getElementById('char');
+const charEl = document.getElementById('character-container');
 const toneEl = document.getElementById('tone');
 const lessonEl = document.getElementById('lesson');
 const choicesEls = document.querySelectorAll('.choice');
