@@ -1,3 +1,10 @@
+// Récupération des éléments HTML
+const charEl = document.getElementById('character-container');
+//const toneEl = document.getElementById('tone');
+//const lessonEl = document.getElementById('lesson');
+const choicesEls = document.querySelectorAll('.choice');
+
+
 // Chargement des données du fichier JSON
 fetch('data.json')
 	.then(response => response.json())
