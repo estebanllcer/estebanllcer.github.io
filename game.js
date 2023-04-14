@@ -16,10 +16,14 @@ fetch('data.json')
 		let currentCharIndex = 0;
 
 		// Affichage du premier caractère et des choix de pinyin
-		let pinyinChoices = [data[currentCharIndex.pinyin]];
-		pinyinChoices.push(data[[Math.floor(Math.random()*data.length)].pinyin]);
-		pinyinChoices.push(data[[Math.floor(Math.random()*data.length)].pinyin]);
-		pinyinChoices.push(data[[Math.floor(Math.random()*data.length)].pinyin]);
+		let pinyinChoices = [data[currentCharIndex].pinyin];
+		console.log(data[currentCharIndex].pinyin);
+		pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+		console.log(pinyinChoices);
+		pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+		console.log(pinyinChoices);
+		pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+		console.log(pinyinChoices);
 		displayCharData(data[currentCharIndex],pinyinChoices);
 
 		// Ajout d'un gestionnaire d'événement sur chaque bouton de choix de pinyin
