@@ -41,6 +41,13 @@ fetch('data.json')
 				// Passage au caractère suivant
 				currentCharIndex++;
 				if (currentCharIndex < data.length) {
+					let pinyinChoices = [data[currentCharIndex].pinyin];
+					console.log(data[currentCharIndex].pinyin);
+					pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+					console.log(pinyinChoices);
+					pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+					console.log(pinyinChoices);
+					pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
 					displayCharData(data[currentCharIndex]);
 				} else {
 					alert('Vous avez terminé!');
