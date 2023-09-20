@@ -106,6 +106,7 @@ fetch('data.json')
 						break;
 				}
 				pinyinchoices.splice(rdmIndex,1);
+				toneChoices.splice(rdmIndex,1);
 			});
 		}
 
@@ -117,8 +118,7 @@ fetch('data.json')
 			}
 		}
 	})
-	.catch(error => console.error(error));
-/*
+	.catch(error => console.error(error));/*
 // Récupération des éléments HTML
 const charEl = document.getElementById('character-container');
 //const toneEl = document.getElementById('tone');
