@@ -51,6 +51,8 @@ fetch('data.json')
 						pinyinChoices.push(data[randomNb].pinyin);
 						toneChoices.push(data[randomNb].tone);
 					}
+					console.log("aaaaaaaaaa");
+					console.log(toneChoices);
 					displayCharData(data[currentCharIndex],pinyinChoices,toneChoices);
 				} else {
 					alert('Vous avez terminé!');
