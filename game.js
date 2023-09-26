@@ -88,6 +88,8 @@ fetch('data.json')
 			choicesEls.forEach((choiceEl, i) => {
 				let rdmIndex = Math.floor(Math.random()*pinyinchoices.length);
 				choiceEl.innerText = pinyinchoices[rdmIndex];
+				console.log(toneChoices);
+				console.log(toneChoices[rdmIndex]);
 				switch (toneChoices[rdmIndex]) {
 					case "1":
 						choiceEl.style.color = "blue";
