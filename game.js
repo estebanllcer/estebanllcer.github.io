@@ -19,14 +19,24 @@ fetch('data.json')
 
 		// Affichage du premier caractère et des choix de pinyin
 		let pinyinChoices = [data[currentCharIndex].pinyin];
-		console.log(data[currentCharIndex].pinyin);
-		pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+		let toneChoices = [data[currentCharIndex].tone];
+		let rdmNb = Math.floor(Math.random()*data.length);
+		console.log(data[rdmNb].pinyin);
+		pinyinChoices.push(data[rdmNb].pinyin);
+		toneChoices.push([data[rdmNb].tone]);
 		console.log(pinyinChoices);
-		pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+		console.log(toneChoices);
+		rdmNb = Math.floor(Math.random()*data.length);
+		pinyinChoices.push(data[rdmNb].pinyin);
+		toneChoices.push([data[rdmNb].tone]);
 		console.log(pinyinChoices);
-		pinyinChoices.push(data[Math.floor(Math.random()*data.length)].pinyin);
+		console.log(toneChoices);
+		rdmNb = Math.floor(Math.random()*data.length);
+		pinyinChoices.push(data[rdmNb].pinyin);
+		toneChoices.push([data[rdmNb].tone]);
 		console.log(pinyinChoices);
-		(displayCharData)(data[currentCharIndex],pinyinChoices);
+		console.log(toneChoices);
+		(displayCharData)(data[currentCharIndex],pinyinChoices,toneChoices);
 
 		// Ajout d'un gestionnaire d'événement sur chaque bouton de choix de pinyin
 		choicesEls.forEach(choiceEl => {
@@ -51,8 +61,6 @@ fetch('data.json')
 						pinyinChoices.push(data[randomNb].pinyin);
 						toneChoices.push(data[randomNb].tone);
 					}
-					console.log("aaaaaaaaaa");
-					console.log(toneChoices);
 					displayCharData(data[currentCharIndex],pinyinChoices,toneChoices);
 				} else {
 					alert('Vous avez terminé!');
@@ -90,8 +98,6 @@ fetch('data.json')
 			choicesEls.forEach((choiceEl, i) => {
 				let rdmIndex = Math.floor(Math.random()*pinyinchoices.length);
 				choiceEl.innerText = pinyinchoices[rdmIndex];
-				console.log(toneChoices);
-				console.log(toneChoices[rdmIndex]);
 				switch (toneChoices[rdmIndex]) {
 					case "1":
 						choiceEl.style.color = "blue";
@@ -122,7 +128,8 @@ fetch('data.json')
 			}
 		}
 	})
-	.catch(error => console.error(error));/*
+	.catch(error => console.error(error));
+/*
 // Récupération des éléments HTML
 const charEl = document.getElementById('character-container');
 //const toneEl = document.getElementById('tone');
