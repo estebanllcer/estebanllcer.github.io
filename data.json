@@ -100,4 +100,52 @@
 	"translation": "Ciel / Jour",
 	"tone": "1",
 	"lesson": "a"
+}, {
+	"chinese_character": "\u592b",
+	"pinyin": "f\u016b",
+	"translation": "",
+	"tone": "1",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u5348",
+	"pinyin": "w\u01d4",
+	"translation": "midi",
+	"tone": "3",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u725b",
+	"pinyin": "Ni\u00fa",
+	"translation": "Bovins",
+	"tone": "2",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u7f8a",
+	"pinyin": "Y\u00e1ng",
+	"translation": "Ovins",
+	"tone": "2",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u534a",
+	"pinyin": "B\u00e0n",
+	"translation": "moiti\u00e9;demi;semi",
+	"tone": "4",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u751f",
+	"pinyin": "Sh\u0113ng",
+	"translation": "Naitre / disciple;\u00e9l\u00e8ve;\u00e9tudiant / inconnu",
+	"tone": "1",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u5c11",
+	"pinyin": "Sh\u01ceo",
+	"translation": "peu (temps ou nombre) / peu souvent",
+	"tone": "3",
+	"lesson": "a"
+}, {
+	"chinese_character": "\u706b",
+	"pinyin": "Hu\u01d2",
+	"translation": "feu",
+	"tone": "3",
+	"lesson": "a"
 }]
